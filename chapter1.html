@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<title>Cubaria</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="icon" 
+      type="image/png" 
+      href="cubariaicon.png">
+
+<style>
+.mySlides {display:none;}
+</style>
+<body style="background-color: bisque;">
+  <img src="cubaria.png" alt="" style=" display: block;
+  margin-left: auto;
+  margin-right: auto; width: 40%;padding: 55px;">
+
+
+
+
+<div class="w3-content" style="max-width:800px;">
+  <img class="mySlides" src="chapter1/page1.png" style="width:500px">
+  <img class="mySlides" src="chapter1/page2.png" style="width:500px">
+  <img class="mySlides" src="chapter1/page3.png" style="width:500px">
+  <img class="mySlides" src="chapter1/page4.png" style="width:500px">
+  <img class="mySlides" src="chapter1/page5.png" style="width:500px">
+  <img class="mySlides" src="chapter1/page6.png" style="width:500px">
+  <img class="mySlides" src="chapter1/page7.png" style="width:500px">
+</div>
+
+<div class="w3-center">
+  <div class="w3-section">
+    <button class="w3-button" onclick="plusDivs(-1) "style="background-color:#DBC4A9">❮ Prev Page</button>
+    <button class="w3-button" onclick="plusDivs(1)"style="background-color:#DBC4A9">Next Page ❯</button>
+  </div>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+    
+  if (n < 0) {slideIndex = x.length}
+  if (n > x.length) {slideIndex = 7}
+  if (n < 1 ) {slideIndex = 1}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+
+  x[slideIndex-1].style.display = "block";  
+  x[slideIndex-1].style.margin = "auto";  
+ 
+}
+</script>
+
+
+
+  <button onclick="window.location.href = 'index.html';" style="  background-color:#DBC4A9 ; /* Green */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: auto;
+  font-size: 16px;
+  cursor: pointer; box-shadow: 10px 10px,-10px -10px;
+  position: relative;
+  top: 50px;
+  ">Go Back</button>
+</body>
+</html>
