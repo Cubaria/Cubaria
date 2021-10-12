@@ -1,0 +1,75 @@
+#video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -4;
+}
+
+.overlay {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.842);
+    z-index: -1;
+}
+
+
+.body{
+    background-color: black;
+}
+
+
+.background{
+    background: rgba(0, 0, 0, 0.842);
+}
+
+.ctrans{
+    background: rgba(0, 0, 0, 1);
+}
+
+.textmain{
+    font-size: 1rem;
+}
+
+.textyou{
+    font-size: 1rem;
+    color: midnightblue;
+    font-weight: 700;
+}
+
+.lol{
+    display: flex;
+}
+
+.textcubey{
+    font-size: 1rem;
+    color: rgb(211, 0, 0);
+    font-weight: 700;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.maincolortext{
+    color: rgb(50,82,43)
+}
+
+.maincolorbg{
+    background-color: rgb(245, 232, 158);
+    outline-style:solid;
+    outline-color:rgb(50,82,43);
+}
+
+p{
+    font-size: large;
+}
+
+b{
+    font-size: large;
+}
