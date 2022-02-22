@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Cubaria</title>
+<meta name="description" content="Follow the story of a young kid saving his planet.">
+<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../index.css ">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+</script>
+
+<script>
+  let page = localStorage.getItem('page');
+  console.log(page);
+  if (page == null)
+  {
+    page = localStorage.setItem('page','1')
+  }
+
+  function save() {
+    let page = localStorage.getItem('page');
+    let current = location.href.split("/").pop().split("?").shift().split(".").shift();
+    page = localStorage.setItem('page',current);
+    console.log("Saved!");
+  }
+
+  function next() {
+    let current = location.href.split("/").pop().split("?").shift().split(".").shift();
+    window.location.href = parseInt(current) + 1 + ".html"
+  }
+
+  function goto() {
+    let page = localStorage.getItem('page');
+    window.location.href = page + ".html"
+  }
+</script>
+
+
+</head>
+
+<body style="background-image:url(prologue/transport.png); background-repeat:repeat; background-size:cover; background-position: center center; overflow-x: hidden;" class="flex flex-column">
+
+<div class="content">
+    <div class="row">
+      <div class="mx-auto c-content">
+        <h2 class="text-center pt-3 text-light">Chapter 1</h2>
+        <div class="containter">
+          <img src="chapter1/9.png" class="mx-auto d-block p-2 img-fluid cont">
+        </div>
+        <div class="row p-4">
+          <div class="bg-light w-75 mx-auto p-4 text-center">
+
+            <p class="textmain">The hell do you mean CRAPASS, and CLONE?! This webcomic is completely pissawesome and totally original! I've had this entire ordeal planed out in my head for longer than you've been alive, TODDLER.</p>
+
+            <p class="textyou p-2 text-center">
+              <a onclick="next()">
+                  >>>>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-sm navbar-light justify-content-center" style="font-size: 1rem;">
+      <ul class="navbar-nav ">
+        <li class="nav-item star">
+            <p class="c-nav-link text-light">Cubaria</p>
+        </li>
+        <li class="nav-item">
+          <a class="c-nav-link text-light" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="c-nav-link text-light" href="../info.html">Info</a>
+        </li>
+        <li class="nav-item active">
+          <a class="c-nav-link text-light bold">Read</a>
+        </li>
+        <li class="nav-item active">
+          <a class="c-nav-link text-light"onclick="save()">Mark Place</a>
+        </li>
+        <li class="nav-item active">
+          <a class="c-nav-link text-light"onclick="goto()">Go To Place</a>
+        </li>
+      </ul>
+    </nav>
+</div>
+
+
+</body>
+
+</html>

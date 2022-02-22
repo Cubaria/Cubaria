@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Cubaria</title>
+<meta name="description" content="Follow the story of a young kid saving his planet.">
+<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../index.css ">
+</script>
+
+<script>
+  let page = localStorage.getItem('page');
+  console.log(page);
+  if (page == null)
+  {
+    page = localStorage.setItem('page','1')
+  }
+
+  function save() {
+    let page = localStorage.getItem('page');
+    let current = location.href.split("/").pop().split("?").shift().split(".").shift();
+    page = localStorage.setItem('page',current);
+    console.log("Saved!");
+  }
+
+  function next() {
+    let current = location.href.split("/").pop().split("?").shift().split(".").shift();
+    window.location.href = parseInt(current) + 1 + ".html"
+  }
+
+  function goto() {
+    let page = localStorage.getItem('page');
+    window.location.href = page + ".html"
+  }
+</script>
+
+
+</head>
+
+<body style="background-image:url(prologue/transport.png); background-repeat:repeat; background-size:cover; background-position: center center; overflow-x: hidden;" class="flex flex-column">
+
+<div class="content">
+    <div class="row">
+      <div class="mx-auto c-content">
+        <h2 class="text-center pt-3 text-dark">Log List</h2>
+        <h4>Parsing...</h4>
+      </div>        
+    </div>
+</div>
+
+
+</body>
+
+</html>
