@@ -16,7 +16,7 @@
 <link rel="stylesheet" href="../index.css ">
 </script>
 
-<script>
+<<script>
   let page = localStorage.getItem('page');
   console.log(page);
   if (page == null)
@@ -33,12 +33,12 @@
 
   function next() {
     let current = location.href.split("/").pop().split("?").shift().split(".").shift();
-    window.location.href = parseInt(current) + 1 + ".html"
+    window.location.href = parseInt(current) + 1 
   }
 
   function goto() {
     let page = localStorage.getItem('page');
-    window.location.href = page + ".html"
+    window.location.href = page 
   }
 </script>
 
@@ -76,10 +76,10 @@
             <p class="c-nav-link text-light">Cubaria</p>
         </li>
         <li class="nav-item">
-          <a class="c-nav-link text-light" href="../index.html">Home</a>
+          <a class="c-nav-link text-light" href="../index">Home</a>
         </li>
         <li class="nav-item">
-          <a class="c-nav-link text-light" href="../info.html">Info</a>
+          <a class="c-nav-link text-light" href="../info">Info</a>
         </li>
         <li class="nav-item active">
           <a class="c-nav-link text-light bold">Read</a>
