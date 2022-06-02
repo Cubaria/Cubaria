@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
 <title>Cubaria</title>
 <meta name="description" content="Follow the story of a young kid saving his planet.">
 <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
@@ -14,33 +15,7 @@
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="../index.css ">
-</script>
-
-<script>
-  let page = localStorage.getItem('page');
-  console.log(page);
-  if (page == null)
-  {
-    page = localStorage.setItem('page','1')
-  }
-
-  function save() {
-    let page = localStorage.getItem('page');
-    let current = location.href.split("/").pop().split("?").shift().split(".").shift();
-    page = localStorage.setItem('page',current);
-    console.log("Saved!");
-  }
-
-  function next() {
-    let current = location.href.split("/").pop().split("?").shift().split(".").shift();
-    window.location.href = parseInt(current) + 1 
-  }
-
-  function goto() {
-    let page = localStorage.getItem('page');
-    window.location.href = page 
-  }
-</script>
+<script src="index.js"></script>
 
 
 </head>
@@ -64,6 +39,10 @@
                   >>>>
               </a>
             </p>
+            <p class="textyou">
+              <a onclick="back()">
+                  <= Back
+            </p>
           </div>
         </div>
       </div>
@@ -74,10 +53,10 @@
             <p class="c-nav-link text-light">Cubaria</p>
         </li>
         <li class="nav-item">
-          <a class="c-nav-link text-light" href="https://www.cubariacomic.com">Home</a>
+          <a class="c-nav-link text-light" href="../index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="c-nav-link text-light" href="../info">Info</a>
+          <a class="c-nav-link text-light" href="../info.html">Info</a>
         </li>
         <li class="nav-item active">
           <a class="c-nav-link text-light bold">Read</a>

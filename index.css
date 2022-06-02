@@ -10,11 +10,8 @@
 
 .notice {
     position: absolute;
-    left: 0; 
-    right: 0;
-    margin-left: auto; 
-    margin-right: auto; 
-    width: 50%;
+    top: 65%;
+    width: 45%;
 }
 
 
@@ -32,11 +29,12 @@
 }
 
 .textmain{
-    font-size: 1rem;
+    font-size: 104%;
+    font-weight: 500;
 }
 
 .textyou{
-    font-size: 1.2rem;
+    font-size: 105%;
     color: midnightblue;
     font-weight: 700;
 }
@@ -67,7 +65,7 @@
 }
 
 p{
-    font-size: large;
+    font-size:large
 }
 
 b{
@@ -114,4 +112,57 @@ width: 60%;
 
 .bg-light {
     background-color: lightgrey !important;
+}
+
+/* mobile S */
+@media screen and (max-width: 375px) {
+    .content { width:110%!important; }
+    .c-content { width:400%!important;}
+    .splash {right: 5%!important; top: 75%!important; width: 50%;}
+    .navbar {text-align: center;}
+    .cont {width: 400px!important;}
+    .cubeysplash{width: 100%;}
+
+}
+
+/* mobile L */
+@media screen and (min-device-width: 378px) and (max-width: 425px) {
+    .content { width:100%!important;}
+    .c-content { width:150%!important;}
+    .splash { width: 80%!important; right: 5%!important; top: 75%!important;}
+    .splashimg { margin: 5%;}
+    .navbar {text-align: center;}
+    .cont {width: 4444444440%!important;}
+
+}
+
+/* mobile L */
+@media screen and (min-device-width: 426px) and (max-width: 1023px) {
+    .content { width:100%!important;}
+    .c-content { width:150%!important;}
+    .splash { width: 80%!important; right: 5%!important; top: 75%!important;}
+    .splashimg { margin: 5%;}
+    .navbar {text-align: center;}
+
+}
+
+@media screen and (min-device-width: 1024) and (max-width: 1042px) {
+    .content { width:100%!important;}
+    .c-content { width:10%!important;}
+    .splash { width: 100%!important; right: 5%!important; top: 75%!important;}
+    .splashimg { margin: 5%;}
+    .navbar {text-align: center;}
+
+}
+
+@media screen and (min-device-width: 1043) {
+    .content { width:100%!important;}
+}
+
+hr
+{
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto; 
+   border: 1px solid white;
 }
