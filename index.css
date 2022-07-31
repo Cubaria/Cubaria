@@ -39,6 +39,13 @@
     font-weight: 700;
 }
 
+.textyounext{
+    font-size: 105%;
+    color: midnightblue;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
 .lol{
     display: flex;
 }
