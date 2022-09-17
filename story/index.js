@@ -13,14 +13,14 @@ function save() {
 }
 function back() {
   let current = location.href.split("/").pop().split("?").shift().split(".").shift();
-  window.location.href = parseInt(current) - 1 + ".html"
+  window.location.href = parseInt(current) - 1
 }
 function next() {
   let current = location.href.split("/").pop().split("?").shift().split(".").shift();
-  window.location.href = parseInt(current) + 1 + ".html"
+  window.location.href = parseInt(current) + 1
 }
 
 function goto() {
   let page = localStorage.getItem('page');
-  window.location.href = page + ".html"
+  window.location.href = page
 }
