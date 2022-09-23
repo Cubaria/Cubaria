@@ -24,3 +24,4 @@ function goto() {
   let page = localStorage.getItem('page');
   window.location.href = page
 }
+
