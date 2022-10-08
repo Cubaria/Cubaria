@@ -11,13 +11,27 @@ function save() {
   page = localStorage.setItem('page',current);
   console.log("Saved!");
 }
-function back() {
-  let current = location.href.split("/").pop().split("?").shift().split(".").shift();
-  window.location.href = parseInt(current) - 1
+function back(x) {
+  if (x === undefined || x === null || x === NaN)
+  {
+    let current = location.href.split("/").pop().split("?").shift().split(".").shift();
+    window.location.href = parseInt(current) - 1 + ".html" 
+  }
+  else
+  {
+    window.location.href = x
+  }
 }
-function next() {
-  let current = location.href.split("/").pop().split("?").shift().split(".").shift();
-  window.location.href = parseInt(current) + 1
+function next(x) {
+  if (x === undefined || x === null || x === NaN)
+  {
+    let current = location.href.split("/").pop().split("?").shift().split(".").shift();
+    window.location.href = parseInt(current) + 1 + ".html" 
+  }
+  else
+  {
+    window.location.href = x
+  }
 }
 
 function goto() {
