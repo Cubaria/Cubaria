@@ -35,25 +35,34 @@
                 playing = false
              audio.currentTime = 0
                 audio.pause()
+                db = false
               }
               if(playing === false)
               {
                  playing = true
                    audio.play()
+                   db = false
           }
         }
-        db = false
     }
 </script>
 
 </head>
 <body>
-<div style="width:311px; height:35px" class="bg-light row" onclick="toggle()">
-    <div class="col-s-3">
-        <img src="/assets/mus.png" class="ml-4">
-    </div>
-    <div class="col">
-        <p>Play: The First Battle.</p>
-    </div>
-</div>
+    <audio controls>
+        <source src="/assets/music/battle.wav" type="audio/wav">
+      Your browser does not support the audio element.
+      </audio> 
+      <audio controls>
+        <source src="/assets/music/cubeystheme.wav" type="audio/wav">
+      Your browser does not support the audio element.
+      </audio> 
+      <audio controls>
+        <source src="/assets/music/inthetemple.wav" type="audio/wav">
+      Your browser does not support the audio element.
+      </audio> 
+      <audio controls>
+        <source src="/assets/music/battle.wav" type="audio/wav">
+      Your browser does not support the audio element.
+      </audio> 
 </body>
