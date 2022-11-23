@@ -130,6 +130,28 @@ b{
     text-align: justify;
     padding-right: 2%;
 }
+.texthex{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-style:normal;
+    background-image:linear-gradient(to bottom, rgba(255, 173, 173, 0.52), rgb(255, 88, 88)), url(https://raw.githubusercontent.com/Cubaria/Cubaria/main/bg.png);
+    background-color:rgb(255, 53, 53);
+    width: 75%;
+    display: block;
+    margin: auto;
+    padding: 1.2rem;
+    border-radius: 0.4rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+.texthex::before
+{
+    content: "Hex:";
+    display: inline-block;
+    text-align: justify;
+    padding-right: 2%;
+}
 .star::after{
     content: url(assets/cstar.png);
     display: inline-block;
