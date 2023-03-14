@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Cubaria</title>
+
+<link rel="icon" type="image/png" href="cubariaicon.png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css ">
+<link rel="stylesheet" href="main.css ">
+<script>
+    $(function() {
+  AOS.init();
+});
+</script>
+<script>
+  function next(x) {
+    var loc = window.location.pathname;
+    var dir = loc.substring(0, loc.lastIndexOf('/'));
+    window.location.href = dir + '/news/' + x + ".html"
+  }
+  function goto() {
+    let page = localStorage.getItem('page');
+    var location = window.location.href;
+    var dir = location.substring(0, location.lastIndexOf("/")+1);
+    if(page != undefined)
+    {
+      
+      window.location.href = dir + 'story/' + page + ".html"
+    }
+    else
+    {
+
+      window.location.href = dir +  "story/1.html"
+    }
+  }
+
+</script>
+</head>
+
+<body style="background-color: wheat; background-repeat:repeat; background-size:auto; background-position: center center; overflow-x: hidden; overflow-y: hidden;" class="flex flex-column">
+
+  <div class="text-center mx-auto my-auto">
+    <h1>
+      Disconnected. (404 page not found.)
+    </h1>
+    <p>Check the URL or go <a href="https://www.cubariacomic.com/">back to the home page.</a></p>
+    <p>Wandering sheep should mind their shepard.</p>
+  </div>
+
+  </body>
+</html>

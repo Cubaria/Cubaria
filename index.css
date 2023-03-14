@@ -1,0 +1,272 @@
+#video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -4;
+}
+
+.notice {
+    position: absolute;
+    top: 65%;
+    width: 45%;
+}
+
+.menu::before{
+    content: url(assets/boiger.png);
+    display: inline-block; 
+    margin-right: 1rem;
+}
+
+.body{
+    background-color: black;
+}
+
+
+.background{
+    background: rgba(0, 0, 0, 0.842);
+}
+
+.ctrans{
+    background: rgba(0, 0, 0, 1);
+}
+
+.textmain{
+    font-size: 104%;
+    font-weight: 500;
+}
+
+.textyou{
+    font-size: 105%;
+    color: midnightblue;
+    font-weight: 700;
+}
+
+.textyounext{
+    font-size: 105%;
+    color: midnightblue;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.lol{
+    display: flex;
+}
+
+.textcubey{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    background-image:linear-gradient(to bottom, rgba(168, 0, 0, 0.52), rgb(62, 0, 0)), url(https://raw.githubusercontent.com/Cubaria/Cubaria/main/bg.png);
+    background-color:rgb(30,30,30);
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding: 1.2rem;
+    border-radius: 0.4rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+.textevil{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    background-image:linear-gradient(to bottom, rgba(53, 0, 0, 0.52), rgb(20, 0, 0)), url(https://raw.githubusercontent.com/Cubaria/Cubaria/main/bg.png);
+    background-color:rgb(30,30,30);
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding: 1.2rem;
+    border-radius: 0.4rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+.textcubey::before
+{
+    content: "Cubey:";
+    display: inline-block;
+    text-align: justify;
+    padding-right: 2%;
+}
+.bold{
+    font-weight: bold;
+}
+
+.maincolortext{
+    color: rgb(50,82,43)
+}
+
+
+.maincolorbg{
+    background-color: rgb(245, 232, 158);
+    outline-style:solid;
+    outline-color:rgb(50,82,43);
+}
+
+p{
+    font-size:large
+}
+
+b{
+    font-size: large;
+}
+
+.textgem{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-style: italic;
+    background-image:linear-gradient(to bottom, rgba(255, 0, 0, 0.52), rgb(71, 0, 0)), url(https://raw.githubusercontent.com/Cubaria/Cubaria/main/bg.png);
+    background-color:rgb(30,30,30);
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding: 1.2rem;
+    border-radius: 0.4rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+.textgem::before
+{
+    content: "???:";
+    display: inline-block;
+    text-align: justify;
+    padding-right: 2%;
+}
+.texthex{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-style:normal;
+    background-image:linear-gradient(to bottom, rgba(255, 173, 173, 0.52), rgb(255, 88, 88)), url(https://raw.githubusercontent.com/Cubaria/Cubaria/main/bg.png);
+    background-color:rgb(255, 53, 53);
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding: 1.2rem;
+    border-radius: 0.4rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+.texthex::before
+{
+    content: "Hex:";
+    display: inline-block;
+    text-align: justify;
+    padding-right: 2%;
+}
+.star::after{
+    content: url(assets/cstar.png);
+    display: inline-block;
+}
+
+.star::before{
+    content: url(assets/cstar.png);
+    display: inline-block;
+}
+
+.c-nav-link
+{
+    display: inline-block;
+    padding: .5rem 1rem;
+}
+
+.c-content
+{
+width: 60%;
+}
+
+.divend::after{
+    content: url(assets/cc.png);
+    display: inline-block;
+}
+
+.divend::before{
+    content: url(assets/cc.png);
+    display: inline-block;
+}
+
+.bg-light {
+    background-color: lightgrey !important;
+}
+
+/* mobile S */
+@media screen and (max-width: 375px) {
+    .content { width:100%!important; }
+    .c-content { width:100%!important;}
+    .splash {right: 5%!important; top: 75%!important; width: 50%;}
+    .navbar-nav {text-align: center; display: none;}
+    .cont {width: 400px!important; padding: 0 !important;}
+    .cubeysplash{width: 100%;}
+    .textcubey{width: 90%;}
+    .textgem{width: 90%;}
+    .bg-light{width: 100% !important; margin: 0px !important;}
+    .row{padding: 0px !important;}
+    .textmain{padding-left: 5% !important;}
+    .textmain{padding-right: 5% !important;}
+    .navbarbutton{display: block !important;}
+    .navbar{display: block;}
+}
+
+/* mobile L */
+@media screen and (min-device-width: 378px) and (max-width: 425px) {
+    .content { width:100%!important;}
+    .c-content { width:150%!important;}
+    .splash { width: 80%!important; right: 5%!important; top: 75%!important;}
+    .splashimg { margin: 5%;}
+    .navbar-nav {text-align: center; display: none;}
+    .navbarbutton{display: block !important;}
+    .cont {width: 4444444440%!important; padding: 0 !important;}
+    .textcubey{width: 90%;}
+    .textgem{width: 90%;}
+    .bg-light{width: 100% !important; margin: 0px !important;}
+    .row{padding: 0px !important;}
+    .textmain{padding-left: 5% !important;}
+    .textmain{padding-right: 5% !important;}
+    .navbar{display: block;}
+}
+
+/* mobile L */
+@media screen and (min-device-width: 426px) and (max-width: 1023px) {
+    .content { width:100%!important;}
+    .c-content { width:150%!important;}
+    .splash { width: 80%!important; right: 5%!important; top: 75%!important;}
+    .splashimg { margin: 5%;}
+    .navbar-nav {text-align: center; display: none;}
+    .navbarbutton{display: block !important;}
+    .textcubey{width: 90%;}
+    .textgem{width: 90%;}
+    .textmain{padding-left: 5% !important;}
+    .textmain{padding-right: 5% !important;}
+    .navbar{display: block;}
+}
+
+@media screen and (min-device-width: 1024) and (max-width: 1042px) {
+    .content { width:100%!important;}
+    .c-content { width:10%!important;}
+    .splash { width: 100%!important; right: 5%!important; top: 75%!important;}
+    .splashimg { margin: 5%;}
+    .navbar {text-align: center;}
+    .navbarbutton{display: none !important;}
+    .textcubey{width: 90%;}
+    .textgem{width: 90%;}
+    .bg-light{width: 100% !important; margin: 0px !important;}
+    .row{padding: 0px !important;}
+}
+
+@media screen and (min-device-width: 1043) {
+    .content { width:100%!important;}
+    .textcubey{width: 90%;}
+    .textgem{width: 90%;}
+    .navbarbutton{display: none !important;}
+}
+
+hr
+{
+   width: 50%;
+   margin-left: auto;
+   margin-right: auto; 
+   border: 1px solid white;
+}

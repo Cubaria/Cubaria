@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+<title>Cubaria</title>
+<meta name="description" content="Follow the story of a young kid saving his planet.">
+<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../index.css ">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+</script>
+
+<script src="index.js"></script>
+<script>
+    var playing = false
+    var song = "/assets/music/battle.wav"
+    var audio = new Audio(song)
+    var db = false
+    function toggle() {
+        if (db === false)
+        {
+            db = true
+            if (playing === true)
+             {
+                playing = false
+             audio.currentTime = 0
+                audio.pause()
+                db = false
+              }
+              if(playing === false)
+              {
+                 playing = true
+                   audio.play()
+                   db = false
+          }
+        }
+    }
+</script>
+
+</head>
+<body>
+    <audio controls>
+        <source src="/assets/music/battle.wav" type="audio/wav">
+      Your browser does not support the audio element.
+      </audio> 
+      <audio controls>
+        <source src="/assets/music/cubeystheme.wav" type="audio/wav">
+      Your browser does not support the audio element.
+      </audio> 
+      <audio controls>
+        <source src="/assets/music/inthetemple.wav" type="audio/wav">
+      Your browser does not support the audio element.
+      </audio> 
+      <audio controls>
+        <source src="/assets/music/battle.wav" type="audio/wav">
+      Your browser does not support the audio element.
+      </audio> 
+</body>

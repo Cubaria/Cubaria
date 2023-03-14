@@ -1,0 +1,73 @@
+@media screen and (min-width:700px){
+    .cubaria_logo {
+        width: 50% !important;
+        height: 5%;
+    }
+    .cubaria_header
+    {
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 43rem !important;
+    }
+    .header {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 8rem !important;
+        font-weight: 800;
+    }
+    .tv
+    {
+        width: 50% !important;
+    }
+    .top_level{
+        padding-top: 33rem !important;
+    }
+    .cubaria_text{
+        font-size: 3em;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    }
+    .cubaria_text_block{
+        width: 75%;
+    }
+}
+.cubaria_header
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 7rem;
+}
+.header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: rgb(70, 70, 70);
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: grey; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+  .top_level{
+    padding-top: 10rem;
+}
+.cubaria_text_block{
+    width: 100%;
+}
+.cubaria_text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}

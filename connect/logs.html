@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Cubaria</title>
+<meta name="description" content="Follow the story of a young kid saving his planet.">
+<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../index.css ">
+</script>
+
+<script>
+  let page = localStorage.getItem('page');
+  console.log(page);
+  if (page == null)
+  {
+    page = localStorage.setItem('page','1')
+  }
+
+  function save() {
+    let page = localStorage.getItem('page');
+    let current = location.href.split("/").pop().split("?").shift().split(".").shift();
+    page = localStorage.setItem('page',current);
+    console.log("Saved!");
+  }
+
+  function next() {
+    let current = location.href.split("/").pop().split("?").shift().split(".").shift();
+    window.location.href = parseInt(current) + 1 + ".html"
+  }
+
+  function goto() {
+    let page = localStorage.getItem('page');
+    window.location.href = page + ".html"
+  }
+</script>
+
+
+</head>
+
+<body style="background-image:url(../connect/bg.gif); background-repeat:repeat; background-size:cover; background-position: center center; overflow-x: hidden;" class="flex flex-column">
+
+<div class="content">
+    <div class="row">
+      <div class="mx-auto c-content">
+
+        <div class="row p-4">
+          <div class="bg-light w-75 mx-auto p-4 text-center">
+            <h1 class="">Logs</h1>
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray; width: 50%;">
+            <p class="textmain">Cubey;</p>
+            <a href="cubey/1.html">
+              <p class="textyou" style="font-size: medium;">Log 1</p>
+            </a>
+            <p class="textmain">Rubio;</p>
+            <a href="rubio/1.html">
+              <p class="textyou" style="font-size: medium;">Entry 1</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+</body>
+
+</html>
