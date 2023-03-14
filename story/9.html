@@ -50,25 +50,28 @@
         </div>
       </div>
     </div>
-    <nav class="navbar navbar-expand-sm navbar-light justify-content-center" style="font-size: 1rem;">
-      <ul class="navbar-nav ">
+     <nav class="navbar navbar-expand-sm navbar-light justify-content-center pb-5" style="font-size: 1rem; position: sticky; top:0; backdrop-filter: blur(4px);">
+    <div class="navbarbutton text-center mx-auto p-1" style="position: sticky; top: 0; backdrop-filter: blur(4px); display: none;">
+      <p class="menu" onclick="menuswap()">Menu</p>
+    </div>  
+      <ul class="navbar-nav" id="navbar">
         <li class="nav-item star">
-            <p class="c-nav-link text-light">Cubaria</p>
+            <p class="c-nav-link text-light bold">Cubaria</p>
+        </li>
+        <li class="nav-item active">
+          <a class="c-nav-link text-light bold" href="../index">Home</a>
         </li>
         <li class="nav-item">
-          <a class="c-nav-link text-light" href="../index.html">Home</a>
+          <a class="c-nav-link text-light " href="../info">Info</a>
         </li>
         <li class="nav-item">
-          <a class="c-nav-link text-light" href="../info.html">Info</a>
+          <a class="c-nav-link text-light" onclick="">Read</a>
         </li>
-        <li class="nav-item active">
-          <a class="c-nav-link text-light bold">Read</a>
+        <li class="nav-item disabled">
+          <a class="c-nav-link text-light"onclick="">Mark Place</a>
         </li>
-        <li class="nav-item active">
-          <a class="c-nav-link text-light"onclick="save()">Mark Place</a>
-        </li>
-        <li class="nav-item active">
-          <a class="c-nav-link text-light"onclick="goto()">Go To Place</a>
+        <li class="nav-item disabled"">
+          <a class="c-nav-link text-light"onclick="">Go To Place</a>
         </li>
       </ul>
     </nav>

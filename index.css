@@ -14,6 +14,11 @@
     width: 45%;
 }
 
+.menu::before{
+    content: url(assets/boiger.png);
+    display: inline-block; 
+    margin-right: 1rem;
+}
 
 .body{
     background-color: black;
@@ -192,11 +197,17 @@ width: 60%;
     .content { width:100%!important; }
     .c-content { width:100%!important;}
     .splash {right: 5%!important; top: 75%!important; width: 50%;}
-    .navbar {text-align: center;}
-    .cont {width: 400px!important;}
+    .navbar-nav {text-align: center; display: none;}
+    .cont {width: 400px!important; padding: 0 !important;}
     .cubeysplash{width: 100%;}
     .textcubey{width: 90%;}
     .textgem{width: 90%;}
+    .bg-light{width: 100% !important; margin: 0px !important;}
+    .row{padding: 0px !important;}
+    .textmain{padding-left: 5% !important;}
+    .textmain{padding-right: 5% !important;}
+    .navbarbutton{display: block !important;}
+    .navbar{display: block;}
 }
 
 /* mobile L */
@@ -205,11 +216,16 @@ width: 60%;
     .c-content { width:150%!important;}
     .splash { width: 80%!important; right: 5%!important; top: 75%!important;}
     .splashimg { margin: 5%;}
-    .navbar {text-align: center;}
-    .cont {width: 4444444440%!important;}
+    .navbar-nav {text-align: center; display: none;}
+    .navbarbutton{display: block !important;}
+    .cont {width: 4444444440%!important; padding: 0 !important;}
     .textcubey{width: 90%;}
     .textgem{width: 90%;}
-
+    .bg-light{width: 100% !important; margin: 0px !important;}
+    .row{padding: 0px !important;}
+    .textmain{padding-left: 5% !important;}
+    .textmain{padding-right: 5% !important;}
+    .navbar{display: block;}
 }
 
 /* mobile L */
@@ -218,10 +234,13 @@ width: 60%;
     .c-content { width:150%!important;}
     .splash { width: 80%!important; right: 5%!important; top: 75%!important;}
     .splashimg { margin: 5%;}
-    .navbar {text-align: center;}
+    .navbar-nav {text-align: center; display: none;}
+    .navbarbutton{display: block !important;}
     .textcubey{width: 90%;}
     .textgem{width: 90%;}
-
+    .textmain{padding-left: 5% !important;}
+    .textmain{padding-right: 5% !important;}
+    .navbar{display: block;}
 }
 
 @media screen and (min-device-width: 1024) and (max-width: 1042px) {
@@ -230,15 +249,18 @@ width: 60%;
     .splash { width: 100%!important; right: 5%!important; top: 75%!important;}
     .splashimg { margin: 5%;}
     .navbar {text-align: center;}
+    .navbarbutton{display: none !important;}
     .textcubey{width: 90%;}
     .textgem{width: 90%;}
-
+    .bg-light{width: 100% !important; margin: 0px !important;}
+    .row{padding: 0px !important;}
 }
 
 @media screen and (min-device-width: 1043) {
     .content { width:100%!important;}
     .textcubey{width: 90%;}
     .textgem{width: 90%;}
+    .navbarbutton{display: none !important;}
 }
 
 hr

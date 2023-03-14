@@ -26,78 +26,21 @@
   AOS.init();
 });
 </script>
-<script>
-  function next(x) {
-    var loc = window.location.pathname;
-    var dir = loc.substring(0, loc.lastIndexOf('/'));
-    window.location.href = dir + '/news/' + x + ".html"
-  }
-  function goto() {
-    let page = localStorage.getItem('page');
-    var location = window.location.href;
-    var dir = location.substring(0, location.lastIndexOf("/")+1);
-    if(page != undefined)
-    {
-      
-      window.location.href = dir + 'story/' + page + ".html"
-    }
-    else
-    {
-
-      window.location.href = dir +  "story/1.html"
-    }
-  }
-
-</script>
+<script src="story/index.js"></script>
 </head>
 
-<body style="background-color: black; background-repeat:repeat; background-size:auto; background-position: center center; overflow-x: hidden;" class="flex flex-column">
+<body style="color:white; background-color: black; background-repeat:no-repeat; background-position: center center; background-image: url(assets/bg.jpg); overflow-x: hidden; background-size: cover;" class="flex flex-column"></body>
 
-  <div style="position:relative; padding-bottom: 10rem;">
-    <div class="row cubaria_header mx-auto" style="position:absolute; background-image: url(assets/info.png);"></div>
-  </div>
-    <div class="row pb-5 top_level">
-        <div class="container w-75 mx-auto" style="position:relative;">
-          <h1 class="text-center text-white header">TAKE BACK YOUR HOME</h1>
-          <div class="text-white p-3 mt-5 cubaria_text_block mx-auto">
-            <p class="cubaria_text">Follow the tragedy of Cubaria as a young boy comes to grips with his unknown reality as the lone savior of his planet.</p>
-            <p class="cubaria_text">Cubaria is a massive mixed media project following the stance of a feeble orphan on a quest to become a hero. Cubey, the aforementioned orphan, is scouting out the ruins of his planet and finds a ruby red gem. The gem tasks him with the salvation of his home. The only question is, is he up for the task?</p>
-          </div>
-        </div>
-    </div>
-  </div>
-  <div style="position:relative;">
-    <div class="row cubaria_header mx-auto" style="position:absolute; background-image: url(assets/credits.png);"></div>
-  </div>
-    <div class="row pb-5 top_level">
-        <div class="container w-75 mx-auto" style="position:relative;">
-          <h1 class="text-center text-white header">CREDIT WHERE CREDITS DUE</h1>
-          <div class="text-white p-3 mt-5 cubaria_text_block mx-auto">
-            <div class="row w-75 mx-auto">
-              <div class="col m-3">
-                <a href="https://twitter.com/buhcket" class="c-nav-link text-light" style="text-decoration:none;">
-                <img src="assets/bucket.png" class="mx-auto d-block w-25">
-                <h3 class="cubaria_text text-center">Buckettu</h3>
-                <h3 class="cubaria_text text-center" style="font-size:1rem;">More than could ever be put on this page.</h3>
-                </a>
-              </div>
-              <div class="col m-3 pb-5">
-                <a href="https://twitter.com/FrogZoid" class="c-nav-link text-light" style="text-decoration:none;">
-                <img src="https://pbs.twimg.com/profile_images/1494245805019918337/rH-yjTc2_400x400.jpg" class="mx-auto d-block w-25">
-                <h3 class="cubaria_text text-center">FrogZoid</h3>
-                <h3 class="cubaria_text text-center" style="font-size:1rem;">Number one homie and fan.</h3>
-                </a>
-              </div>
-              <div class="w-100"></div>
+  <div class="row mx-auto my-auto d-block" style=" height:100vh; width: 100vw; position: absolute; z-index: -5;"></div>
 
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
+    
 
-    <nav class="navbar navbar-expand-sm navbar-light justify-content-center pb-5" style="font-size: 1rem;">
-      <ul class="navbar-nav ">
+  <img src="assets/Cubarialogo.webp" class="mx-auto cubaria_logo d-block">
+  <nav class="navbar navbar-expand-sm navbar-light justify-content-center pb-2" style="font-size: 1rem; position: sticky; top:0; backdrop-filter: blur(4px);">
+    <div class="navbarbutton text-center mx-auto" style="position: sticky; top: 0; backdrop-filter: blur(4px); display: none;">
+      <p class="menu" onclick="menuswap()">Menu</p>
+    </div>  
+      <ul class="navbar-nav" id="navbar">
         <li class="nav-item star">
             <p class="c-nav-link text-light bold">Cubaria</p>
         </li>
@@ -118,6 +61,21 @@
         </li>
       </ul>
     </nav>
+    <div class="cubaria_text_block mb-5">
+      <h1 class="header mb-5">WELCOME TO THE END</h1>
+      <p class="cubaria_text mb-5">Follow the tragedy of Cubaria as a young boy comes to grips with his unknown reality as the lone savior of his planet.</p>
+      <p class="cubaria_text">Cubaria is a massive mixed media project following the stance of a feeble orphan on a quest to become a hero. Cubey, the aforementioned orphan, is scouting out the ruins of his planet and finds a ruby red gem. The gem tasks him with the salvation of his home. The only question is, is he up for the task?</p>
+    </div>
+    <div class="cubaria_text_block">
+      <h1 class="header mb-5" style="margin-top: -2rem;">V</h1>
+      <p class="header mb-5">THANK YOU TO:</p>
+      <p class="header">My Brothers</p>
+      <p class="header">My Sister</p>
+      <p class="header">My Best Friends</p>
+      <p class="header">Jackmaster187</p>
+      <p class="header">My Fans and Supporters</p>
+      <p class="cubaria_text mb-5">Without any of you, this comic wouldn't be possible.</p>
+    </div>
   </div>
   
   <script>
@@ -133,33 +91,5 @@
 
   
   </body>
-  <footer class="">
-  <div class="bg-dark text-light mx-auto">
-    <img src="assets/mesamedialight.png" class="mx-auto d-block p-5 m-3" style="width:20rem">
-    <div class="row w-50 mx-auto">
-      <hr>
-      <div class="col m-3 text-center">
-        <b>Social Media</b>
-        <hr>
-        <p class="p-1"><a href="https://twitter.com/CubariaComic" class="text-white" style=" text-decoration: none;">Twitter</a></p>
-        <p class="p-1"><a href="https://www.youtube.com/channel/UCYW39u_O2yK73I0l5vJ8CSg" class="text-white" style=" text-decoration: none;">YouTube</a></p>
 
-      </div>
-      <div class="col m-3 text-center">
-        <b>What We Love</b>
-        <hr>
-        <p class="p-1"><a href="https://www.aane.org" class="text-white" style=" text-decoration: none;">Asperger / Autism Network</a></p>
-        <p class="p-1"><a href="https://www.hsi.org" class="text-white" style=" text-decoration: none;">Humane Society International</a></p>
-        <p class="p-1"><a href="https://suicidepreventionlifeline.org/" class="text-white" style=" text-decoration: none;">National Suicide Prevention Lifeline</a></p>
-      </div>
-      <div class="col m-3 text-center">
-        <b>Help</b>
-        <hr>
-        <p class="p-1"><a href="https://twitter.com/LDexus" class="text-white" style=" text-decoration: none;">Twitter</a></p>
-        <p class="p-1"><a href="mailto:ldexus.mesamedia@gmail.com" class="text-white" style=" text-decoration: none;">Email</a></p>
-
-      </div>
-    </div>
-  </div>
-  </footer>
 </html>

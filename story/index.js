@@ -36,6 +36,14 @@ function next(x) {
 
 function goto() {
   let page = localStorage.getItem('page');
-  window.location.href = page
+  window.location.href = "story/" + page;
 }
 
+function menuswap(){
+  var x = document.getElementById("navbar");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
