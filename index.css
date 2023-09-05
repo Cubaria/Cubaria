@@ -8,34 +8,23 @@
     z-index: -4;
 }
 
-.notice {
-    position: absolute;
-    top: 65%;
-    width: 45%;
-}
-
 .menu::before{
     content: url(assets/boiger.png);
     display: inline-block; 
     margin-right: 1rem;
 }
 
-.body{
-    background-color: black;
-}
-
-
-.background{
-    background: rgba(0, 0, 0, 0.842);
-}
-
-.ctrans{
-    background: rgba(0, 0, 0, 1);
-}
-
 .textmain{
-    font-size: 104%;
+    font-size: 1.25rem;
+    color: rgb(255, 255, 255);
     font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: auto;
+    border-radius: 0.4rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    text-align: center;
 }
 
 .textyou{
@@ -44,44 +33,31 @@
     font-weight: 700;
 }
 
-.textyounext{
-    font-size: 105%;
-    color: midnightblue;
-    font-weight: 700;
-    text-decoration: underline;
-}
-
-.lol{
-    display: flex;
-}
 
 .textcubey{
-    font-size: 1rem;
-    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    color: rgb(218, 0, 0);
     font-weight: 700;
-    background-image:linear-gradient(to bottom, rgba(168, 0, 0, 0.52), rgb(62, 0, 0)), url(https://raw.githubusercontent.com/Cubaria/Cubaria/main/bg.png);
-    background-color:rgb(30,30,30);
     width: 90%;
     display: block;
     margin: auto;
-    padding: 1.2rem;
     border-radius: 0.4rem;
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
+    text-align: center;
 }
+
 .textevil{
-    font-size: 1rem;
-    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    color: rgb(155, 155, 155);
     font-weight: 700;
-    background-image:linear-gradient(to bottom, rgba(53, 0, 0, 0.52), rgb(20, 0, 0)), url(https://raw.githubusercontent.com/Cubaria/Cubaria/main/bg.png);
-    background-color:rgb(30,30,30);
     width: 90%;
     display: block;
     margin: auto;
-    padding: 1.2rem;
     border-radius: 0.4rem;
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
+    text-align: center;
 }
 .textcubey::before
 {
@@ -90,43 +66,19 @@
     text-align: justify;
     padding-right: 2%;
 }
-.bold{
-    font-weight: bold;
-}
-
-.maincolortext{
-    color: rgb(50,82,43)
-}
-
-
-.maincolorbg{
-    background-color: rgb(245, 232, 158);
-    outline-style:solid;
-    outline-color:rgb(50,82,43);
-}
-
-p{
-    font-size:large
-}
-
-b{
-    font-size: large;
-}
 
 .textgem{
-    font-size: 1rem;
-    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    color: rgb(255, 0, 0);
     font-weight: 700;
     font-style: italic;
-    background-image:linear-gradient(to bottom, rgba(255, 0, 0, 0.52), rgb(71, 0, 0)), url(https://raw.githubusercontent.com/Cubaria/Cubaria/main/bg.png);
-    background-color:rgb(30,30,30);
     width: 90%;
     display: block;
     margin: auto;
-    padding: 1.2rem;
     border-radius: 0.4rem;
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
+    text-align: center;
 }
 .textgem::before
 {
@@ -136,19 +88,17 @@ b{
     padding-right: 2%;
 }
 .texthex{
-    font-size: 1rem;
-    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    color: rgb(255, 151, 151);
     font-weight: 700;
-    font-style:normal;
-    background-image:linear-gradient(to bottom, rgba(255, 173, 173, 0.52), rgb(255, 88, 88)), url(https://raw.githubusercontent.com/Cubaria/Cubaria/main/bg.png);
-    background-color:rgb(255, 53, 53);
+    font-style: italic;
     width: 90%;
     display: block;
     margin: auto;
-    padding: 1.2rem;
     border-radius: 0.4rem;
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
+    text-align: center;
 }
 .texthex::before
 {
@@ -167,110 +117,136 @@ b{
     display: inline-block;
 }
 
-.c-nav-link
-{
-    display: inline-block;
-    padding: .5rem 1rem;
-}
-
-.c-content
-{
-width: 60%;
-}
-
-.divend::after{
-    content: url(assets/cc.png);
-    display: inline-block;
-}
-
-.divend::before{
-    content: url(assets/cc.png);
-    display: inline-block;
-}
-
-.bg-light {
-    background-color: lightgrey !important;
-}
-
-/* mobile S */
-@media screen and (max-width: 375px) {
-    .content { width:100%!important; }
-    .c-content { width:100%!important;}
-    .splash {right: 5%!important; top: 75%!important; width: 50%;}
-    .navbar-nav {text-align: center; display: none;}
-    .cont {width: 400px!important; padding: 0 !important;}
-    .cubeysplash{width: 100%;}
-    .textcubey{width: 90%;}
-    .textgem{width: 90%;}
-    .bg-light{width: 100% !important; margin: 0px !important;}
-    .row{padding: 0px !important;}
-    .textmain{padding-left: 5% !important;}
-    .textmain{padding-right: 5% !important;}
-    .navbarbutton{display: block !important;}
-    .navbar{display: block;}
-}
-
-/* mobile L */
-@media screen and (min-device-width: 378px) and (max-width: 425px) {
-    .content { width:100%!important;}
-    .c-content { width:150%!important;}
-    .splash { width: 80%!important; right: 5%!important; top: 75%!important;}
-    .splashimg { margin: 5%;}
-    .navbar-nav {text-align: center; display: none;}
-    .navbarbutton{display: block !important;}
-    .cont {width: 4444444440%!important; padding: 0 !important;}
-    .textcubey{width: 90%;}
-    .textgem{width: 90%;}
-    .bg-light{width: 100% !important; margin: 0px !important;}
-    .row{padding: 0px !important;}
-    .textmain{padding-left: 5% !important;}
-    .textmain{padding-right: 5% !important;}
-    .navbar{display: block;}
-}
-
-/* mobile L */
-@media screen and (min-device-width: 426px) and (max-width: 1023px) {
-    .content { width:100%!important;}
-    .c-content { width:150%!important;}
-    .splash { width: 80%!important; right: 5%!important; top: 75%!important;}
-    .splashimg { margin: 5%;}
-    .navbar-nav {text-align: center; display: none;}
-    .navbarbutton{display: block !important;}
-    .textcubey{width: 90%;}
-    .textgem{width: 90%;}
-    .textmain{padding-left: 5% !important;}
-    .textmain{padding-right: 5% !important;}
-    .navbar{display: block;}
-}
-
-@media screen and (min-device-width: 1024) and (max-width: 1042px) {
-    .content { width:100%!important;}
-    .c-content { width:10%!important;}
-    .splash { width: 100%!important; right: 5%!important; top: 75%!important;}
-    .splashimg { margin: 5%;}
-    .navbar {text-align: center;}
-    .navbarbutton{display: none !important;}
-    .textcubey{width: 90%;}
-    .textgem{width: 90%;}
-    .bg-light{width: 100% !important; margin: 0px !important;}
-    .row{padding: 0px !important;}
-}
-
-@media screen and (min-device-width: 1043) {
-    .content { width:100%!important;}
-    .textcubey{width: 90%;}
-    .textgem{width: 90%;}
-    .navbarbutton{display: none !important;}
-}
-
-hr
-{
-   width: 50%;
-   margin-left: auto;
-   margin-right: auto; 
-   border: 1px solid white;
-}
-
 .menu{
     color: white;
 }
+
+.sl{
+    border-image:url(assets/speechleft.png);
+    border-style: solid;
+    border-image-repeat: round;
+    border-width: 20px;
+    border-image-slice: 30;
+    background-clip: padding-box
+}
+.sr{
+    border-image:url(assets/speechright.png);
+    border-style: solid;
+    border-image-repeat: round;
+    border-width: 20px;
+    border-image-slice: 30;
+    background-clip: padding-box
+}
+.tl{
+    border-image:url(assets/thoughtleft.png);
+    border-style: solid;
+    border-image-repeat: round;
+    border-width: 20px;
+    border-image-slice: 30;
+    background-clip: padding-box
+}
+.tr{
+    border-image:url(assets/thoughtright.png);
+    border-style: solid;
+    border-image-repeat: round;
+    border-width: 20px;
+    border-image-slice: 30;
+    background-clip: padding-box
+}
+.g{
+    border-image:url(assets/ghastly.png);
+    border-style: solid;
+    border-image-repeat: round;
+    border-width: 20px;
+    border-image-slice: 30;
+    background-clip: padding-box
+}
+.minilogo{
+    width: 12rem;
+}
+
+.bg-transport
+{
+    background-image: url(story/prologue/transport.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.bg-trees
+{
+    background-image: url(assets/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.bg-depth
+{
+    background-image: url(assets/bgd.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.bg-green
+{
+    background-image: url(assets/bggreen.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.bg-tree
+{
+    background-image: url(assets/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.bg-dark{
+    color:white !important;
+}
+
+.bg-rgba{
+    background-color: rgba(0, 0, 0, 0.52);
+    backdrop-filter: blur(3px);
+}
+
+.bg-mt{
+    background-color: rgba(0, 0, 0, 0.52);
+    backdrop-filter: blur(3px);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.nxt{
+    border-image:url(assets/nextoutline.png);
+    border-style: solid;
+    border-image-repeat: round;
+    border-width: 10px;
+    border-image-slice: 30;
+    background-clip: padding-box;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+    width: 6rem;
+    margin: 1rem;
+    background-color: rgb(39, 39, 39);
+}
+
+.padder
+{
+    margin-top: 7rem;
+}
+
+@media screen and (min-width: 800px) {
+    .page
+    {
+        width: 30%;
+        
+    }
+    .pageimage{width: 75%;}
+ }
