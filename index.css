@@ -1,0 +1,252 @@
+#video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -4;
+}
+
+.menu::before{
+    content: url(assets/boiger.png);
+    display: inline-block; 
+    margin-right: 1rem;
+}
+
+.textmain{
+    font-size: 1.25rem;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    width: 90%;
+    display: block;
+    margin: auto;
+    border-radius: 0.4rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    text-align: center;
+}
+
+.textyou{
+    font-size: 105%;
+    color: midnightblue;
+    font-weight: 700;
+}
+
+
+.textcubey{
+    font-size: 1.25rem;
+    color: rgb(218, 0, 0);
+    font-weight: 700;
+    width: 90%;
+    display: block;
+    margin: auto;
+    border-radius: 0.4rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    text-align: center;
+}
+
+.textevil{
+    font-size: 1.25rem;
+    color: rgb(155, 155, 155);
+    font-weight: 700;
+    width: 90%;
+    display: block;
+    margin: auto;
+    border-radius: 0.4rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    text-align: center;
+}
+.textcubey::before
+{
+    content: "Cubey:";
+    display: inline-block;
+    text-align: justify;
+    padding-right: 2%;
+}
+
+.textgem{
+    font-size: 1.25rem;
+    color: rgb(255, 0, 0);
+    font-weight: 700;
+    font-style: italic;
+    width: 90%;
+    display: block;
+    margin: auto;
+    border-radius: 0.4rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    text-align: center;
+}
+.textgem::before
+{
+    content: "???:";
+    display: inline-block;
+    text-align: justify;
+    padding-right: 2%;
+}
+.texthex{
+    font-size: 1.25rem;
+    color: rgb(255, 151, 151);
+    font-weight: 700;
+    font-style: italic;
+    width: 90%;
+    display: block;
+    margin: auto;
+    border-radius: 0.4rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    text-align: center;
+}
+.texthex::before
+{
+    content: "Hex:";
+    display: inline-block;
+    text-align: justify;
+    padding-right: 2%;
+}
+.star::after{
+    content: url(assets/cstar.png);
+    display: inline-block;
+}
+
+.star::before{
+    content: url(assets/cstar.png);
+    display: inline-block;
+}
+
+.menu{
+    color: white;
+}
+
+.sl{
+    border-image:url(assets/speechleft.png);
+    border-style: solid;
+    border-image-repeat: round;
+    border-width: 20px;
+    border-image-slice: 30;
+    background-clip: padding-box
+}
+.sr{
+    border-image:url(assets/speechright.png);
+    border-style: solid;
+    border-image-repeat: round;
+    border-width: 20px;
+    border-image-slice: 30;
+    background-clip: padding-box
+}
+.tl{
+    border-image:url(assets/thoughtleft.png);
+    border-style: solid;
+    border-image-repeat: round;
+    border-width: 20px;
+    border-image-slice: 30;
+    background-clip: padding-box
+}
+.tr{
+    border-image:url(assets/thoughtright.png);
+    border-style: solid;
+    border-image-repeat: round;
+    border-width: 20px;
+    border-image-slice: 30;
+    background-clip: padding-box
+}
+.g{
+    border-image:url(assets/ghastly.png);
+    border-style: solid;
+    border-image-repeat: round;
+    border-width: 20px;
+    border-image-slice: 30;
+    background-clip: padding-box
+}
+.minilogo{
+    width: 12rem;
+}
+
+.bg-transport
+{
+    background-image: url(story/prologue/transport.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.bg-trees
+{
+    background-image: url(assets/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.bg-depth
+{
+    background-image: url(assets/bgd.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.bg-green
+{
+    background-image: url(assets/bggreen.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.bg-tree
+{
+    background-image: url(assets/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.bg-dark{
+    color:white !important;
+}
+
+.bg-rgba{
+    background-color: rgba(0, 0, 0, 0.52);
+    backdrop-filter: blur(3px);
+}
+
+.bg-mt{
+    background-color: rgba(0, 0, 0, 0.52);
+    backdrop-filter: blur(3px);
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.nxt{
+    border-image:url(assets/nextoutline.png);
+    border-style: solid;
+    border-image-repeat: round;
+    border-width: 10px;
+    border-image-slice: 30;
+    background-clip: padding-box;
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+    width: 6rem;
+    margin: 1rem;
+    background-color: rgb(39, 39, 39);
+}
+
+.padder
+{
+    margin-top: 7rem;
+}
+
+@media screen and (min-width: 800px) {
+    .page
+    {
+        width: 30%;
+        
+    }
+    .pageimage{width: 75%;}
+ }
