@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+<title>Cubaria</title>
+<meta name="description" content="Follow the story of a young kid saving his planet.">
+<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../index.css ">
+<link rel="stylesheet" href="../main.css ">
+<script src="index.js"></script>
+
+
+</head>
+
+<header>
+  
+</header>
+<body class="bg-trees" style="overflow-x: hidden;">
+  <div class="padder ">
+    <div class="page mx-auto">
+      <div class="fluid-container">
+        <h1 class="text-center text-white mb-4"><b>Chapter 1</b></h1>
+        <div class="pageimage mx-auto">
+          <img class="mx-auto d-block w-100" src="chapter1/63.png">
+        </div>
+      </div>
+      <div class="fluid-container p-3 bg-rgba mt-4">
+        <div>
+          <div class="bg-mt">
+            <h2 class="textmain">Crack!</h2>
+          </div>
+        </div>
+        <a onclick="next()" class="text-white text-center p-3">
+          <h2>>>>Next</h2>
+        </a>
+        <a onclick="back()" class="text-white text-center p-3">
+          <h2>>>>Go Back</h2>
+        </a>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(function(){     
+      $.ajax({  
+        type: "GET",
+        url: "header.html",  
+        dataType: "html",
+        success: function(answer) {  
+        $("header").append(answer);  
+        },
+        error: function(){
+        alert("failed call!!!");
+        } 
+      }); 
+      return false;  
+    });
+  </script> 
+</body>
+</html>
